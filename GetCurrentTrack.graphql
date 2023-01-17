@@ -1,0 +1,9 @@
+query GetCurrentTrack($type: String) {
+    current(type: $type) {
+    	prevs {
+       	    title
+            date
+        }
+    }
+}
+
