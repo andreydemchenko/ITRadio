@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FavoritesTrackView" customModule="ITRadio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KJg-C8-Y1k">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RxSwift_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="8HP-LU-fu3">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="96"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="aMd-wZ-atc"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eBm-LH-01q">
+                            <rect key="frame" x="45" y="0.0" width="240" height="96"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Song name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTO-OI-gjK">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="76.666666666666671"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Artist name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXs-UU-w1b">
+                                    <rect key="frame" x="0.0" y="76.666666666666671" width="240" height="19.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZa-uy-v3Y">
+                            <rect key="frame" x="290" y="0.0" width="40" height="96"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Z38-7e-SiL"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system" title=" "/>
+                            <connections>
+                                <action selector="likeDislikeBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="Fku-sM-M1q"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9B9-3F-naD">
+                            <rect key="frame" x="335" y="0.0" width="40" height="96"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="OSL-fF-XTV"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="info.circle.fill" catalog="system" title=" "/>
+                            <connections>
+                                <action selector="infoBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="dnE-Cb-LEe"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KJg-C8-Y1k" secondAttribute="bottom" id="5aG-0z-LWS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KJg-C8-Y1k" secondAttribute="trailing" id="Gbc-xb-C6N"/>
+                <constraint firstItem="KJg-C8-Y1k" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Nwx-eJ-Hj3"/>
+                <constraint firstItem="KJg-C8-Y1k" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Yqj-Cl-Wqx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="artistNameLbl" destination="SXs-UU-w1b" id="Muq-kg-ytq"/>
+                <outlet property="infoBtn" destination="9B9-3F-naD" id="vsM-TM-gUp"/>
+                <outlet property="likeDislikeBtn" destination="PZa-uy-v3Y" id="jaI-sY-Bzn"/>
+                <outlet property="trackImageView" destination="8HP-LU-fu3" id="tp0-ed-WJk"/>
+                <outlet property="trackNameLbl" destination="uTO-OI-gjK" id="K9a-ep-NgO"/>
+            </connections>
+            <point key="canvasLocation" x="-296.15384615384613" y="-210.42654028436019"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="RxSwift_Logo.png" width="600" height="600"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="123"/>
+    </resources>
+</document>

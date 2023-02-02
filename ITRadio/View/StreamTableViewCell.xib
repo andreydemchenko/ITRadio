@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="488" id="KGk-i7-Jjw" customClass="StreamTableViewCell" customModule="ITRadio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="485"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="485"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="e1Z-5J-uZ2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="485"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="zbE-9d-VXD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="193.33333333333334"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Рок" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJi-QZ-wdU">
+                                        <rect key="frame" x="12" y="8" width="296" height="48"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <color key="textColor" white="0.0" alpha="0.8992023594332057" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Говорят, что рок – музыка протеста, не верьте, ведь рок — это свобода!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhO-Gh-CJh">
+                                        <rect key="frame" x="12" y="56.000000000000007" width="296" height="71.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="0.89920235940000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHr-Vu-kqM">
+                                        <rect key="frame" x="12" y="127.66666666666667" width="296" height="57.666666666666671"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msr-zL-zMw">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="57.666666666666664"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="sV2-AJ-yIO"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="0.89920235940000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="pause.rectangle" catalog="system" title=" "/>
+                                                <connections>
+                                                    <action selector="playPauseBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BrP-qx-BPw"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HMD-Ac-Omu">
+                                                <rect key="frame" x="36" y="0.0" width="260" height="57.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="СЕЙЧАС" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9M-tm-EGi">
+                                                        <rect key="frame" x="0.0" y="11.999999999999986" width="260" height="14.333333333333336"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rp-Yk-x1u">
+                                                        <rect key="frame" x="0.0" y="26.333333333333329" width="260" height="19.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="12" left="0.0" bottom="12" right="0.0"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="8" left="12" bottom="8" right="12"/>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="image_rock" translatesAutoresizingMaskIntoConstraints="NO" id="R4q-II-vMM">
+                                <rect key="frame" x="0.0" y="193.33333333333334" width="320" height="291.66666666666663"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.86274509803921573" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="e1Z-5J-uZ2" secondAttribute="bottom" id="5IC-KG-AQQ"/>
+                    <constraint firstItem="e1Z-5J-uZ2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8k1-Cz-2ov"/>
+                    <constraint firstItem="e1Z-5J-uZ2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YXS-n4-1fG"/>
+                    <constraint firstAttribute="trailing" secondItem="e1Z-5J-uZ2" secondAttribute="trailing" id="jHT-Ix-ve5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="currentSongNameLbl" destination="7Rp-Yk-x1u" id="vzq-IH-iSM"/>
+                <outlet property="currentSongStackView" destination="HMD-Ac-Omu" id="9Px-4a-nM3"/>
+                <outlet property="descriptionStreamLbl" destination="yhO-Gh-CJh" id="zWS-e3-qTI"/>
+                <outlet property="playSongBtn" destination="msr-zL-zMw" id="jfC-lz-XYK"/>
+                <outlet property="stackView" destination="e1Z-5J-uZ2" id="45c-cX-HT6"/>
+                <outlet property="streamImageView" destination="R4q-II-vMM" id="Lwq-iS-q05"/>
+                <outlet property="streamName" destination="dJi-QZ-wdU" id="Rue-Z5-KcO"/>
+            </connections>
+            <point key="canvasLocation" x="135" y="171"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="image_rock" width="640" height="582"/>
+        <image name="pause.rectangle" catalog="system" width="128" height="93"/>
+    </resources>
+</document>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="ITRadio" customModuleProvider="target">
+            <connections>
+                <outlet property="usernameLbl" destination="NOY-4w-ZxQ" id="XFR-Sy-BYN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="29A-Bk-343">
+                    <rect key="frame" x="24" y="82" width="18" height="20"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOY-4w-ZxQ">
+                    <rect key="frame" x="58" y="77" width="302" height="32"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorites" translatesAutoresizingMaskIntoConstraints="NO" id="2c1-Tw-DqA">
+                    <rect key="frame" x="24" y="162" width="22" height="20"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="hdM-9g-nJv">
+                    <rect key="frame" x="24" y="202" width="20" height="20"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signout" translatesAutoresizingMaskIntoConstraints="NO" id="FHX-3A-97z">
+                    <rect key="frame" x="24" y="732" width="17" height="18"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKm-sN-NKB">
+                    <rect key="frame" x="46" y="155" width="224" height="35"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Музыкальный вкус"/>
+                    <connections>
+                        <action selector="favoritesBtnClicked:" destination="-1" eventType="touchUpInside" id="9g7-aA-mjI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CpW-BC-ZlE">
+                    <rect key="frame" x="44" y="196" width="216" height="35"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Личные данные"/>
+                    <connections>
+                        <action selector="personalDataBtnClicked:" destination="-1" eventType="touchUpInside" id="xx3-tl-XTR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4m-GS-GZt">
+                    <rect key="frame" x="42" y="724" width="198" height="35"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Выйти из аккаунта"/>
+                    <connections>
+                        <action selector="signOutBtnClicked:" destination="-1" eventType="touchUpInside" id="8rj-ai-79u"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UG0-Vv-DCR">
+                    <rect key="frame" x="16" y="242" width="135.66666666666666" height="35"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Написать нам"/>
+                    <connections>
+                        <action selector="writeBtnClicked:" destination="-1" eventType="touchUpInside" id="R24-7n-9py"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="t4m-GS-GZt" secondAttribute="trailing" constant="150" id="09L-HH-Cws"/>
+                <constraint firstItem="2c1-Tw-DqA" firstAttribute="top" secondItem="29A-Bk-343" secondAttribute="bottom" constant="60" id="4ia-N1-Yk2"/>
+                <constraint firstItem="ZKm-sN-NKB" firstAttribute="leading" secondItem="2c1-Tw-DqA" secondAttribute="trailing" id="7qr-Xs-c7n"/>
+                <constraint firstItem="CpW-BC-ZlE" firstAttribute="leading" secondItem="hdM-9g-nJv" secondAttribute="trailing" id="CHp-TQ-g00"/>
+                <constraint firstItem="UG0-Vv-DCR" firstAttribute="top" secondItem="hdM-9g-nJv" secondAttribute="bottom" constant="20" id="FBi-MK-wec"/>
+                <constraint firstItem="hdM-9g-nJv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="GEx-d4-aD3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="t4m-GS-GZt" secondAttribute="bottom" constant="51" id="NPI-Ux-sqx"/>
+                <constraint firstItem="CpW-BC-ZlE" firstAttribute="top" secondItem="ZKm-sN-NKB" secondAttribute="bottom" constant="6" id="QSj-MT-5J9"/>
+                <constraint firstItem="29A-Bk-343" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="Tm5-YA-9fY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZKm-sN-NKB" secondAttribute="trailing" constant="120" id="Udc-QU-C5e"/>
+                <constraint firstItem="NOY-4w-ZxQ" firstAttribute="leading" secondItem="29A-Bk-343" secondAttribute="trailing" constant="16" id="bh7-gx-Elw"/>
+                <constraint firstItem="FHX-3A-97z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="cIF-73-RHu"/>
+                <constraint firstItem="t4m-GS-GZt" firstAttribute="leading" secondItem="FHX-3A-97z" secondAttribute="trailing" constant="1" id="ftm-8R-f0i"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CpW-BC-ZlE" secondAttribute="trailing" constant="130" id="j7R-1I-pE2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FHX-3A-97z" secondAttribute="bottom" constant="60" id="oC1-4h-PRQ"/>
+                <constraint firstItem="ZKm-sN-NKB" firstAttribute="top" secondItem="NOY-4w-ZxQ" secondAttribute="bottom" constant="46" id="oDM-kc-Y2D"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NOY-4w-ZxQ" secondAttribute="trailing" constant="30" id="oO3-pL-J34"/>
+                <constraint firstItem="UG0-Vv-DCR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="oh8-Bq-uCj"/>
+                <constraint firstItem="29A-Bk-343" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="pVw-Ht-ewC"/>
+                <constraint firstItem="NOY-4w-ZxQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="pbJ-A1-IIZ"/>
+                <constraint firstItem="CpW-BC-ZlE" firstAttribute="leading" secondItem="hdM-9g-nJv" secondAttribute="trailing" id="uX1-gH-5nR"/>
+                <constraint firstItem="hdM-9g-nJv" firstAttribute="top" secondItem="2c1-Tw-DqA" secondAttribute="bottom" constant="20" id="wSh-Ns-JeB"/>
+                <constraint firstItem="2c1-Tw-DqA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="xKo-j8-GlI"/>
+            </constraints>
+            <point key="canvasLocation" x="130.76923076923077" y="-11.374407582938389"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="favorites" width="22" height="20"/>
+        <image name="settings" width="20" height="20"/>
+        <image name="signout" width="17" height="18"/>
+        <image name="user" width="18" height="20"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

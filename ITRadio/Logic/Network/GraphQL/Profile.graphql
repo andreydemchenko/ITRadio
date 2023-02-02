@@ -1,0 +1,9 @@
+query Profile_v2 {
+  profile_v2 {
+    _id
+    birthday
+    email
+    gender
+    username
+  }
+}

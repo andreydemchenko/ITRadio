@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNavBar" customModule="ITRadio" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Fa3-Ro-Zph"/>
+                <outlet property="navBarBtn" destination="UMM-Yw-fGm" id="SXn-sC-GxO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_text" translatesAutoresizingMaskIntoConstraints="NO" id="bk1-eu-xqx">
+                    <rect key="frame" x="16" y="14" width="110" height="20"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMM-Yw-fGm">
+                    <rect key="frame" x="301.66666666666669" y="9" width="72.333333333333314" height="32"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Button">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" metaFont="system" size="16"/>
+                                    <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="navBarBtnClicked:" destination="-1" eventType="touchUpInside" id="y3c-1s-5yO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UMM-Yw-fGm" secondAttribute="trailing" constant="16" id="EoT-Px-Tgl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bk1-eu-xqx" secondAttribute="bottom" constant="14" id="I1C-QD-3Oe"/>
+                <constraint firstItem="UMM-Yw-fGm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="O8U-BU-in2"/>
+                <constraint firstItem="bk1-eu-xqx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="RVn-Hf-PLU"/>
+                <constraint firstItem="bk1-eu-xqx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="UGn-vS-gdE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="UMM-Yw-fGm" secondAttribute="bottom" constant="7" id="ggg-QK-JeZ"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132.30769230769229" y="-825.35545023696682"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo_text" width="110" height="20"/>
+    </resources>
+</document>

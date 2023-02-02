@@ -1,0 +1,6 @@
+query Tastes_v2 {
+  tastes_v2 {
+    genre
+    rating
+  }
+}

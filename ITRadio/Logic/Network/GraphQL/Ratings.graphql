@@ -1,0 +1,38 @@
+query Ratings {
+  ratings {
+    rating
+    track {
+      _id
+      title
+      track
+      artist
+      cover {
+        big
+        small
+      }
+      album
+      release
+      rating {
+        likes
+        dislikes
+      }
+      genre
+      wikipedia
+      userRating
+      spotify {
+        trackId
+        url
+      }
+      appleMusic {
+        trackId
+        albumId
+        url
+      }
+      yandexMusic {
+        trackId
+        albumId
+        url
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+query getTrackDetails($title: String!) {
+  track_v2(title: $title) {
+    _id
+    album
+    appleMusic {
+      albumId
+      trackId
+      url
+    }
+    artist
+    cover {
+      big
+      small
+    }
+    genre
+    rating {
+      dislikes
+      likes
+    }
+    release
+    spotify {
+      trackId
+      url
+    }
+    title
+    track
+    userRating
+    wikipedia
+    yandexMusic {
+      albumId
+      trackId
+      url
+    }
+  }
+}

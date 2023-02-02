@@ -8,35 +8,132 @@
 
 /* Begin PBXBuildFile section */
 		8C178B9F2975781800CC05D7 /* StreamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C178B9E2975781800CC05D7 /* StreamModel.swift */; };
-		8C3224B62976741300C15E16 /* ApolloManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3224B52976741300C15E16 /* ApolloManager.swift */; };
-		8C41FD17297589E800D870DB /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 8C41FD16297589E800D870DB /* Apollo */; };
-		8C41FD19297589E800D870DB /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 8C41FD18297589E800D870DB /* ApolloSQLite */; };
-		8C41FD1B297589E800D870DB /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 8C41FD1A297589E800D870DB /* ApolloWebSocket */; };
 		8C72E98C29755D9100E54DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C72E98B29755D9100E54DB5 /* AppDelegate.swift */; };
 		8C72E98E29755D9100E54DB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C72E98D29755D9100E54DB5 /* SceneDelegate.swift */; };
-		8C72E99029755D9100E54DB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C72E98F29755D9100E54DB5 /* ViewController.swift */; };
+		8C72E99029755D9100E54DB5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C72E98F29755D9100E54DB5 /* HomeViewController.swift */; };
 		8C72E99329755D9100E54DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C72E99129755D9100E54DB5 /* Main.storyboard */; };
 		8C72E99529755D9500E54DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C72E99429755D9500E54DB5 /* Assets.xcassets */; };
 		8C72E99829755D9500E54DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C72E99629755D9500E54DB5 /* LaunchScreen.storyboard */; };
-		8C72E9A02975637C00E54DB5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C72E99F2975637C00E54DB5 /* ViewModel.swift */; };
+		8C72E9A02975637C00E54DB5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C72E99F2975637C00E54DB5 /* HomeViewModel.swift */; };
 		8C72E9A3297567C100E54DB5 /* StreamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C72E9A1297567C100E54DB5 /* StreamTableViewCell.swift */; };
 		8C72E9A4297567C100E54DB5 /* StreamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C72E9A2297567C100E54DB5 /* StreamTableViewCell.xib */; };
+		8C80046B29829014009202D1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80046929829013009202D1 /* SignInViewController.swift */; };
+		8C80046C29829014009202D1 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C80046A29829014009202D1 /* SignInViewController.xib */; };
+		8C80046F29829EBC009202D1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80046D29829EBC009202D1 /* SignUpViewController.swift */; };
+		8C80047029829EBC009202D1 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C80046E29829EBC009202D1 /* SignUpViewController.xib */; };
+		8C8004722983C9D5009202D1 /* Login.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8C8004712983C9D5009202D1 /* Login.graphql */; };
+		8C8004742983CA34009202D1 /* SignUp.qraphql in Resources */ = {isa = PBXBuildFile; fileRef = 8C8004732983CA34009202D1 /* SignUp.qraphql */; };
+		8C8004762983CA8A009202D1 /* Rate.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8C8004752983CA8A009202D1 /* Rate.graphql */; };
+		8C8004782983CAC1009202D1 /* Tastes.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8C8004772983CAC1009202D1 /* Tastes.graphql */; };
+		8C80047A2983CAF4009202D1 /* Profile.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8C8004792983CAF4009202D1 /* Profile.graphql */; };
+		8C80047C2983CB33009202D1 /* Favorites.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8C80047B2983CB33009202D1 /* Favorites.graphql */; };
+		8C80047E2983CB7A009202D1 /* Ratings.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8C80047D2983CB7A009202D1 /* Ratings.graphql */; };
+		8C8004802983E610009202D1 /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80047F2983E610009202D1 /* AuthorizationViewModel.swift */; };
+		8C8004832983F29F009202D1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8004812983F29F009202D1 /* MenuViewController.swift */; };
+		8C8004842983F29F009202D1 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8004822983F29F009202D1 /* MenuViewController.xib */; };
+		8C8004862983FCEC009202D1 /* Logout.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8C8004852983FCEC009202D1 /* Logout.graphql */; };
+		8C80048929840840009202D1 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80048729840840009202D1 /* FavoritesViewController.swift */; };
+		8C80048A29840840009202D1 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C80048829840840009202D1 /* FavoritesViewController.xib */; };
+		8C8004902987B400009202D1 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80048F2987B400009202D1 /* FavoritesViewModel.swift */; };
+		8C8004922987BB22009202D1 /* URL+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8004912987BB22009202D1 /* URL+Ext.swift */; };
+		8C8004942987C261009202D1 /* TokenInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8004932987C261009202D1 /* TokenInterceptor.swift */; };
+		8C8004962987C2C9009202D1 /* NetworkInterceptorsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8004952987C2C9009202D1 /* NetworkInterceptorsProvider.swift */; };
+		8C8004982987EAC7009202D1 /* UIStackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8004972987EAC6009202D1 /* UIStackView+Ext.swift */; };
+		8C80049A2987F763009202D1 /* FavoritesTrackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8004992987F763009202D1 /* FavoritesTrackView.xib */; };
+		8C80049C2987F8DE009202D1 /* FavoritesTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80049B2987F8DE009202D1 /* FavoritesTrackView.swift */; };
+		8C9C7A46297ABBBA00DDE77F /* CurrentTracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C7A44297ABBB900DDE77F /* CurrentTracksViewController.swift */; };
+		8C9C7A47297ABBBA00DDE77F /* CurrentTracksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C9C7A45297ABBB900DDE77F /* CurrentTracksViewController.xib */; };
+		8C9C7A49297AC2F900DDE77F /* CurrentStreamItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C7A48297AC2F900DDE77F /* CurrentStreamItemView.swift */; };
+		8C9C7A4B297AC30D00DDE77F /* CurrentStreamItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C9C7A4A297AC30D00DDE77F /* CurrentStreamItemView.xib */; };
+		8C9C7A4D297E6A7700DDE77F /* AnimLoadingTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C7A4C297E6A7700DDE77F /* AnimLoadingTrackView.swift */; };
+		8C9C7A4F297E6A8300DDE77F /* AnimLoadingTrackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C9C7A4E297E6A8300DDE77F /* AnimLoadingTrackView.xib */; };
+		8C9C7A52297E971300DDE77F /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 8C9C7A51297E971300DDE77F /* RxBlocking */; };
+		8C9C7A54297E971300DDE77F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 8C9C7A53297E971300DDE77F /* RxCocoa */; };
+		8C9C7A56297E971300DDE77F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 8C9C7A55297E971300DDE77F /* RxRelay */; };
+		8C9C7A58297E971300DDE77F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8C9C7A57297E971300DDE77F /* RxSwift */; };
+		8CB146C32977D41300D7CF4A /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 8CB146C22977D41300D7CF4A /* Apollo */; };
+		8CB146C52977D41300D7CF4A /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 8CB146C42977D41300D7CF4A /* ApolloWebSocket */; };
+		8CB146C72977DD6300D7CF4A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB146C62977DD6300D7CF4A /* NetworkManager.swift */; };
+		8CB146C92977DFC800D7CF4A /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB146C82977DFC800D7CF4A /* Tracks.swift */; };
+		8CB146CB2977E17A00D7CF4A /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB146CA2977E17A00D7CF4A /* AppContext.swift */; };
+		8CB146CE2977EE3900D7CF4A /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB146CC2977EE3900D7CF4A /* TrackViewController.swift */; };
+		8CB146CF2977EE3900D7CF4A /* TrackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CB146CD2977EE3900D7CF4A /* TrackViewController.xib */; };
+		8CB146D12978112100D7CF4A /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB146D02978112100D7CF4A /* AudioPlayer.swift */; };
+		8CB146D32978259800D7CF4A /* GetTrackDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8CB146D22978259800D7CF4A /* GetTrackDetails.graphql */; };
+		8CB146D52978262000D7CF4A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB146D42978262000D7CF4A /* API.swift */; };
+		8CB146D72979394700D7CF4A /* UIWindow+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB146D62979394700D7CF4A /* UIWindow+Ext.swift */; };
+		8CB146DB29793B3300D7CF4A /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB146DA29793B3300D7CF4A /* CustomNavBar.swift */; };
+		8CB146DD29793B4500D7CF4A /* CustomNavBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CB146DC29793B4500D7CF4A /* CustomNavBar.xib */; };
+		8CD9CFCC2988F69F00DF7419 /* InfoTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9CFCA2988F69F00DF7419 /* InfoTrackViewController.swift */; };
+		8CD9CFCD2988F69F00DF7419 /* InfoTrackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD9CFCB2988F69F00DF7419 /* InfoTrackViewController.xib */; };
+		8CD9CFD02989157400DF7419 /* PersonalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9CFCE2989157400DF7419 /* PersonalDataViewController.swift */; };
+		8CD9CFD12989157400DF7419 /* PersonalDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD9CFCF2989157400DF7419 /* PersonalDataViewController.xib */; };
+		8CD9CFD4298A7E3B00DF7419 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9CFD2298A7E3B00DF7419 /* FeedbackViewController.swift */; };
+		8CD9CFD5298A7E3B00DF7419 /* FeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD9CFD3298A7E3B00DF7419 /* FeedbackViewController.xib */; };
+		8CD9CFD7298A87E400DF7419 /* Feedback.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8CD9CFD6298A87E400DF7419 /* Feedback.graphql */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C178B9E2975781800CC05D7 /* StreamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamModel.swift; sourceTree = "<group>"; };
-		8C3224B52976741300C15E16 /* ApolloManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloManager.swift; sourceTree = "<group>"; };
 		8C72E98829755D9100E54DB5 /* ITRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C72E98B29755D9100E54DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C72E98D29755D9100E54DB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8C72E98F29755D9100E54DB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C72E98F29755D9100E54DB5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8C72E99229755D9100E54DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C72E99429755D9500E54DB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C72E99729755D9500E54DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C72E99929755D9500E54DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C72E99F2975637C00E54DB5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8C72E99F2975637C00E54DB5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8C72E9A1297567C100E54DB5 /* StreamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamTableViewCell.swift; sourceTree = "<group>"; };
 		8C72E9A2297567C100E54DB5 /* StreamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StreamTableViewCell.xib; sourceTree = "<group>"; };
+		8C80046929829013009202D1 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		8C80046A29829014009202D1 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		8C80046D29829EBC009202D1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8C80046E29829EBC009202D1 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		8C8004712983C9D5009202D1 /* Login.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Login.graphql; sourceTree = "<group>"; };
+		8C8004732983CA34009202D1 /* SignUp.qraphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = SignUp.qraphql; sourceTree = "<group>"; };
+		8C8004752983CA8A009202D1 /* Rate.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rate.graphql; sourceTree = "<group>"; };
+		8C8004772983CAC1009202D1 /* Tastes.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Tastes.graphql; sourceTree = "<group>"; };
+		8C8004792983CAF4009202D1 /* Profile.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Profile.graphql; sourceTree = "<group>"; };
+		8C80047B2983CB33009202D1 /* Favorites.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Favorites.graphql; sourceTree = "<group>"; };
+		8C80047D2983CB7A009202D1 /* Ratings.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Ratings.graphql; sourceTree = "<group>"; };
+		8C80047F2983E610009202D1 /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
+		8C8004812983F29F009202D1 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8C8004822983F29F009202D1 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		8C8004852983FCEC009202D1 /* Logout.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Logout.graphql; sourceTree = "<group>"; };
+		8C80048729840840009202D1 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		8C80048829840840009202D1 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		8C80048F2987B400009202D1 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		8C8004912987BB22009202D1 /* URL+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Ext.swift"; sourceTree = "<group>"; };
+		8C8004932987C261009202D1 /* TokenInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenInterceptor.swift; sourceTree = "<group>"; };
+		8C8004952987C2C9009202D1 /* NetworkInterceptorsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorsProvider.swift; sourceTree = "<group>"; };
+		8C8004972987EAC6009202D1 /* UIStackView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Ext.swift"; sourceTree = "<group>"; };
+		8C8004992987F763009202D1 /* FavoritesTrackView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTrackView.xib; sourceTree = "<group>"; };
+		8C80049B2987F8DE009202D1 /* FavoritesTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTrackView.swift; sourceTree = "<group>"; };
+		8C9C7A44297ABBB900DDE77F /* CurrentTracksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTracksViewController.swift; sourceTree = "<group>"; };
+		8C9C7A45297ABBB900DDE77F /* CurrentTracksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentTracksViewController.xib; sourceTree = "<group>"; };
+		8C9C7A48297AC2F900DDE77F /* CurrentStreamItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStreamItemView.swift; sourceTree = "<group>"; };
+		8C9C7A4A297AC30D00DDE77F /* CurrentStreamItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentStreamItemView.xib; sourceTree = "<group>"; };
+		8C9C7A4C297E6A7700DDE77F /* AnimLoadingTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimLoadingTrackView.swift; sourceTree = "<group>"; };
+		8C9C7A4E297E6A8300DDE77F /* AnimLoadingTrackView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimLoadingTrackView.xib; sourceTree = "<group>"; };
+		8CB146C62977DD6300D7CF4A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8CB146C82977DFC800D7CF4A /* Tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
+		8CB146CA2977E17A00D7CF4A /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		8CB146CC2977EE3900D7CF4A /* TrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		8CB146CD2977EE3900D7CF4A /* TrackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TrackViewController.xib; path = ITRadio/ViewController/TrackViewController.xib; sourceTree = SOURCE_ROOT; };
+		8CB146D02978112100D7CF4A /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		8CB146D22978259800D7CF4A /* GetTrackDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetTrackDetails.graphql; sourceTree = "<group>"; };
+		8CB146D42978262000D7CF4A /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		8CB146D62979394700D7CF4A /* UIWindow+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Ext.swift"; sourceTree = "<group>"; };
+		8CB146DA29793B3300D7CF4A /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
+		8CB146DC29793B4500D7CF4A /* CustomNavBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavBar.xib; sourceTree = "<group>"; };
+		8CD9CFCA2988F69F00DF7419 /* InfoTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTrackViewController.swift; sourceTree = "<group>"; };
+		8CD9CFCB2988F69F00DF7419 /* InfoTrackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTrackViewController.xib; sourceTree = "<group>"; };
+		8CD9CFCE2989157400DF7419 /* PersonalDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataViewController.swift; sourceTree = "<group>"; };
+		8CD9CFCF2989157400DF7419 /* PersonalDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalDataViewController.xib; sourceTree = "<group>"; };
+		8CD9CFD2298A7E3B00DF7419 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		8CD9CFD3298A7E3B00DF7419 /* FeedbackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedbackViewController.xib; sourceTree = "<group>"; };
+		8CD9CFD6298A87E400DF7419 /* Feedback.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Feedback.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +141,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C41FD17297589E800D870DB /* Apollo in Frameworks */,
-				8C41FD1B297589E800D870DB /* ApolloWebSocket in Frameworks */,
-				8C41FD19297589E800D870DB /* ApolloSQLite in Frameworks */,
+				8C9C7A58297E971300DDE77F /* RxSwift in Frameworks */,
+				8C9C7A56297E971300DDE77F /* RxRelay in Frameworks */,
+				8CB146C32977D41300D7CF4A /* Apollo in Frameworks */,
+				8C9C7A52297E971300DDE77F /* RxBlocking in Frameworks */,
+				8C9C7A54297E971300DDE77F /* RxCocoa in Frameworks */,
+				8CB146C52977D41300D7CF4A /* ApolloWebSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,20 +172,147 @@
 		8C72E98A29755D9100E54DB5 /* ITRadio */ = {
 			isa = PBXGroup;
 			children = (
-				8C72E98B29755D9100E54DB5 /* AppDelegate.swift */,
-				8C72E98D29755D9100E54DB5 /* SceneDelegate.swift */,
-				8C72E98F29755D9100E54DB5 /* ViewController.swift */,
-				8C72E99129755D9100E54DB5 /* Main.storyboard */,
-				8C72E99429755D9500E54DB5 /* Assets.xcassets */,
-				8C72E99629755D9500E54DB5 /* LaunchScreen.storyboard */,
+				8CB146E7297978E600D7CF4A /* ViewModel */,
+				8CB146E52979789B00D7CF4A /* Logic */,
+				8CB146E22979781400D7CF4A /* Utils */,
+				8CB146E0297977DA00D7CF4A /* ViewController */,
 				8C72E99929755D9500E54DB5 /* Info.plist */,
-				8C72E99F2975637C00E54DB5 /* ViewModel.swift */,
-				8C72E9A1297567C100E54DB5 /* StreamTableViewCell.swift */,
-				8C72E9A2297567C100E54DB5 /* StreamTableViewCell.xib */,
-				8C178B9E2975781800CC05D7 /* StreamModel.swift */,
-				8C3224B52976741300C15E16 /* ApolloManager.swift */,
+				8CB146E12979780900D7CF4A /* View */,
+				8CB146E42979786700D7CF4A /* Model */,
 			);
 			path = ITRadio;
+			sourceTree = "<group>";
+		};
+		8CB146DE297977AA00D7CF4A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8CB146DF297977BF00D7CF4A /* GraphQL */,
+				8CB146C62977DD6300D7CF4A /* NetworkManager.swift */,
+				8C8004932987C261009202D1 /* TokenInterceptor.swift */,
+				8C8004952987C2C9009202D1 /* NetworkInterceptorsProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8CB146DF297977BF00D7CF4A /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				8CB146D42978262000D7CF4A /* API.swift */,
+				8CB146D22978259800D7CF4A /* GetTrackDetails.graphql */,
+				8C8004712983C9D5009202D1 /* Login.graphql */,
+				8C8004732983CA34009202D1 /* SignUp.qraphql */,
+				8C8004752983CA8A009202D1 /* Rate.graphql */,
+				8C8004772983CAC1009202D1 /* Tastes.graphql */,
+				8C8004792983CAF4009202D1 /* Profile.graphql */,
+				8C80047B2983CB33009202D1 /* Favorites.graphql */,
+				8C80047D2983CB7A009202D1 /* Ratings.graphql */,
+				8C8004852983FCEC009202D1 /* Logout.graphql */,
+				8CD9CFD6298A87E400DF7419 /* Feedback.graphql */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		8CB146E0297977DA00D7CF4A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C7A44297ABBB900DDE77F /* CurrentTracksViewController.swift */,
+				8C72E98F29755D9100E54DB5 /* HomeViewController.swift */,
+				8CB146CC2977EE3900D7CF4A /* TrackViewController.swift */,
+				8C80046929829013009202D1 /* SignInViewController.swift */,
+				8C80046D29829EBC009202D1 /* SignUpViewController.swift */,
+				8C8004812983F29F009202D1 /* MenuViewController.swift */,
+				8C80048729840840009202D1 /* FavoritesViewController.swift */,
+				8CD9CFCA2988F69F00DF7419 /* InfoTrackViewController.swift */,
+				8CD9CFCE2989157400DF7419 /* PersonalDataViewController.swift */,
+				8CD9CFD2298A7E3B00DF7419 /* FeedbackViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8CB146E12979780900D7CF4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8CB146CD2977EE3900D7CF4A /* TrackViewController.xib */,
+				8C72E99129755D9100E54DB5 /* Main.storyboard */,
+				8C72E99629755D9500E54DB5 /* LaunchScreen.storyboard */,
+				8C72E9A1297567C100E54DB5 /* StreamTableViewCell.swift */,
+				8C72E9A2297567C100E54DB5 /* StreamTableViewCell.xib */,
+				8CB146DA29793B3300D7CF4A /* CustomNavBar.swift */,
+				8CB146DC29793B4500D7CF4A /* CustomNavBar.xib */,
+				8C9C7A45297ABBB900DDE77F /* CurrentTracksViewController.xib */,
+				8C9C7A48297AC2F900DDE77F /* CurrentStreamItemView.swift */,
+				8C9C7A4A297AC30D00DDE77F /* CurrentStreamItemView.xib */,
+				8C9C7A4C297E6A7700DDE77F /* AnimLoadingTrackView.swift */,
+				8C9C7A4E297E6A8300DDE77F /* AnimLoadingTrackView.xib */,
+				8C80046A29829014009202D1 /* SignInViewController.xib */,
+				8C80046E29829EBC009202D1 /* SignUpViewController.xib */,
+				8C8004822983F29F009202D1 /* MenuViewController.xib */,
+				8C80048829840840009202D1 /* FavoritesViewController.xib */,
+				8C8004992987F763009202D1 /* FavoritesTrackView.xib */,
+				8C80049B2987F8DE009202D1 /* FavoritesTrackView.swift */,
+				8CD9CFCB2988F69F00DF7419 /* InfoTrackViewController.xib */,
+				8CD9CFCF2989157400DF7419 /* PersonalDataViewController.xib */,
+				8CD9CFD3298A7E3B00DF7419 /* FeedbackViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8CB146E22979781400D7CF4A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8CB146CA2977E17A00D7CF4A /* AppContext.swift */,
+				8C72E98B29755D9100E54DB5 /* AppDelegate.swift */,
+				8C72E98D29755D9100E54DB5 /* SceneDelegate.swift */,
+				8C72E99429755D9500E54DB5 /* Assets.xcassets */,
+				8CB146E32979781C00D7CF4A /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8CB146E32979781C00D7CF4A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8CB146D62979394700D7CF4A /* UIWindow+Ext.swift */,
+				8C8004912987BB22009202D1 /* URL+Ext.swift */,
+				8C8004972987EAC6009202D1 /* UIStackView+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8CB146E42979786700D7CF4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C178B9E2975781800CC05D7 /* StreamModel.swift */,
+				8CB146C82977DFC800D7CF4A /* Tracks.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CB146E52979789B00D7CF4A /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				8CB146E6297978C200D7CF4A /* Service */,
+				8CB146DE297977AA00D7CF4A /* Network */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		8CB146E6297978C200D7CF4A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8CB146D02978112100D7CF4A /* AudioPlayer.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8CB146E7297978E600D7CF4A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8C72E99F2975637C00E54DB5 /* HomeViewModel.swift */,
+				8C80047F2983E610009202D1 /* AuthorizationViewModel.swift */,
+				8C80048F2987B400009202D1 /* FavoritesViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +333,12 @@
 			);
 			name = ITRadio;
 			packageProductDependencies = (
-				8C41FD16297589E800D870DB /* Apollo */,
-				8C41FD18297589E800D870DB /* ApolloSQLite */,
-				8C41FD1A297589E800D870DB /* ApolloWebSocket */,
+				8CB146C22977D41300D7CF4A /* Apollo */,
+				8CB146C42977D41300D7CF4A /* ApolloWebSocket */,
+				8C9C7A51297E971300DDE77F /* RxBlocking */,
+				8C9C7A53297E971300DDE77F /* RxCocoa */,
+				8C9C7A55297E971300DDE77F /* RxRelay */,
+				8C9C7A57297E971300DDE77F /* RxSwift */,
 			);
 			productName = ITRadio;
 			productReference = 8C72E98829755D9100E54DB5 /* ITRadio.app */;
@@ -139,7 +369,8 @@
 			);
 			mainGroup = 8C72E97F29755D9100E54DB5;
 			packageReferences = (
-				8C41FD15297589E800D870DB /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				8CB146C12977D41300D7CF4A /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				8C9C7A50297E971300DDE77F /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 8C72E98929755D9100E54DB5 /* Products */;
 			projectDirPath = "";
@@ -155,10 +386,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C8004762983CA8A009202D1 /* Rate.graphql in Resources */,
+				8CD9CFD7298A87E400DF7419 /* Feedback.graphql in Resources */,
+				8C9C7A4F297E6A8300DDE77F /* AnimLoadingTrackView.xib in Resources */,
+				8CB146D32978259800D7CF4A /* GetTrackDetails.graphql in Resources */,
+				8CD9CFD5298A7E3B00DF7419 /* FeedbackViewController.xib in Resources */,
+				8C8004862983FCEC009202D1 /* Logout.graphql in Resources */,
+				8CB146CF2977EE3900D7CF4A /* TrackViewController.xib in Resources */,
+				8C8004742983CA34009202D1 /* SignUp.qraphql in Resources */,
+				8C9C7A47297ABBBA00DDE77F /* CurrentTracksViewController.xib in Resources */,
 				8C72E99829755D9500E54DB5 /* LaunchScreen.storyboard in Resources */,
+				8C8004842983F29F009202D1 /* MenuViewController.xib in Resources */,
+				8C80049A2987F763009202D1 /* FavoritesTrackView.xib in Resources */,
+				8C8004722983C9D5009202D1 /* Login.graphql in Resources */,
 				8C72E99529755D9500E54DB5 /* Assets.xcassets in Resources */,
+				8CD9CFCD2988F69F00DF7419 /* InfoTrackViewController.xib in Resources */,
 				8C72E99329755D9100E54DB5 /* Main.storyboard in Resources */,
 				8C72E9A4297567C100E54DB5 /* StreamTableViewCell.xib in Resources */,
+				8C80046C29829014009202D1 /* SignInViewController.xib in Resources */,
+				8CB146DD29793B4500D7CF4A /* CustomNavBar.xib in Resources */,
+				8C80047A2983CAF4009202D1 /* Profile.graphql in Resources */,
+				8C80048A29840840009202D1 /* FavoritesViewController.xib in Resources */,
+				8C80047029829EBC009202D1 /* SignUpViewController.xib in Resources */,
+				8C9C7A4B297AC30D00DDE77F /* CurrentStreamItemView.xib in Resources */,
+				8C8004782983CAC1009202D1 /* Tastes.graphql in Resources */,
+				8CD9CFD12989157400DF7419 /* PersonalDataViewController.xib in Resources */,
+				8C80047C2983CB33009202D1 /* Favorites.graphql in Resources */,
+				8C80047E2983CB7A009202D1 /* Ratings.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +435,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}/GraphQL\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=\"https://it-radio.ru/graphql\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\n\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\necho ls\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" \"${SRCROOT}/${TARGET_NAME}/Logic/Network/GraphQL/API.swift\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -190,13 +444,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C72E99029755D9100E54DB5 /* ViewController.swift in Sources */,
+				8C9C7A4D297E6A7700DDE77F /* AnimLoadingTrackView.swift in Sources */,
+				8C72E99029755D9100E54DB5 /* HomeViewController.swift in Sources */,
+				8CB146CB2977E17A00D7CF4A /* AppContext.swift in Sources */,
 				8C72E98C29755D9100E54DB5 /* AppDelegate.swift in Sources */,
-				8C72E9A02975637C00E54DB5 /* ViewModel.swift in Sources */,
+				8C8004802983E610009202D1 /* AuthorizationViewModel.swift in Sources */,
+				8CB146D72979394700D7CF4A /* UIWindow+Ext.swift in Sources */,
+				8C8004982987EAC7009202D1 /* UIStackView+Ext.swift in Sources */,
+				8C80048929840840009202D1 /* FavoritesViewController.swift in Sources */,
+				8C9C7A46297ABBBA00DDE77F /* CurrentTracksViewController.swift in Sources */,
+				8C72E9A02975637C00E54DB5 /* HomeViewModel.swift in Sources */,
+				8CD9CFCC2988F69F00DF7419 /* InfoTrackViewController.swift in Sources */,
+				8C80046F29829EBC009202D1 /* SignUpViewController.swift in Sources */,
+				8C8004942987C261009202D1 /* TokenInterceptor.swift in Sources */,
+				8C8004962987C2C9009202D1 /* NetworkInterceptorsProvider.swift in Sources */,
 				8C72E9A3297567C100E54DB5 /* StreamTableViewCell.swift in Sources */,
-				8C3224B62976741300C15E16 /* ApolloManager.swift in Sources */,
+				8C8004922987BB22009202D1 /* URL+Ext.swift in Sources */,
+				8C8004832983F29F009202D1 /* MenuViewController.swift in Sources */,
+				8C80049C2987F8DE009202D1 /* FavoritesTrackView.swift in Sources */,
+				8CB146C72977DD6300D7CF4A /* NetworkManager.swift in Sources */,
+				8CB146CE2977EE3900D7CF4A /* TrackViewController.swift in Sources */,
+				8CD9CFD02989157400DF7419 /* PersonalDataViewController.swift in Sources */,
+				8CB146DB29793B3300D7CF4A /* CustomNavBar.swift in Sources */,
+				8CB146D52978262000D7CF4A /* API.swift in Sources */,
+				8CB146C92977DFC800D7CF4A /* Tracks.swift in Sources */,
+				8C8004902987B400009202D1 /* FavoritesViewModel.swift in Sources */,
 				8C72E98E29755D9100E54DB5 /* SceneDelegate.swift in Sources */,
+				8C80046B29829014009202D1 /* SignInViewController.swift in Sources */,
+				8CD9CFD4298A7E3B00DF7419 /* FeedbackViewController.swift in Sources */,
 				8C178B9F2975781800CC05D7 /* StreamModel.swift in Sources */,
+				8CB146D12978112100D7CF4A /* AudioPlayer.swift in Sources */,
+				8C9C7A49297AC2F900DDE77F /* CurrentStreamItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +550,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +604,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -418,30 +696,53 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8C41FD15297589E800D870DB /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+		8C9C7A50297E971300DDE77F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.0;
+			};
+		};
+		8CB146C12977D41300D7CF4A /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				kind = exactVersion;
+				version = 0.40.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8C41FD16297589E800D870DB /* Apollo */ = {
+		8C9C7A51297E971300DDE77F /* RxBlocking */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8C41FD15297589E800D870DB /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			package = 8C9C7A50297E971300DDE77F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		8C9C7A53297E971300DDE77F /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C9C7A50297E971300DDE77F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		8C9C7A55297E971300DDE77F /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C9C7A50297E971300DDE77F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		8C9C7A57297E971300DDE77F /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C9C7A50297E971300DDE77F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		8CB146C22977D41300D7CF4A /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CB146C12977D41300D7CF4A /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = Apollo;
 		};
-		8C41FD18297589E800D870DB /* ApolloSQLite */ = {
+		8CB146C42977D41300D7CF4A /* ApolloWebSocket */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8C41FD15297589E800D870DB /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = ApolloSQLite;
-		};
-		8C41FD1A297589E800D870DB /* ApolloWebSocket */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8C41FD15297589E800D870DB /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			package = 8CB146C12977D41300D7CF4A /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = ApolloWebSocket;
 		};
 /* End XCSwiftPackageProductDependency section */

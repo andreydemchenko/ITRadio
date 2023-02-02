@@ -1,0 +1,20 @@
+query Favorites {
+  favorites {
+    favorite
+    rating
+    track {
+      _id
+      album
+      appleMusicId
+      artist
+      cover {
+        big
+        small
+      }
+      title
+      track
+      spotifyID
+      yandexMusicId
+    }
+  }
+}

@@ -1,0 +1,3 @@
+mutation Login_v2($form: SignupInput!) {
+  signup_v2(form: $form)
+}

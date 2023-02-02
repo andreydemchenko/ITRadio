@@ -1,0 +1,3 @@
+mutation Feedback($text: String!) {
+  feedback(text: $text)
+}

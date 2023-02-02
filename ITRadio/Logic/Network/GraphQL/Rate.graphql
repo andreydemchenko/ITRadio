@@ -1,0 +1,6 @@
+mutation Rate_v2($trackId: ID!, $rating: Boolean) {
+  rate_v2(trackId: $trackId, rating: $rating) {
+    dislikes
+    likes
+  }
+}
