@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class AuthorizationViewModel {
+class SignImViewModel {
     
     let signInError: PublishSubject<String> = PublishSubject()
     let signOutError: PublishSubject<String> = PublishSubject()
